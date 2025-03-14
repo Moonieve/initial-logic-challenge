@@ -42,7 +42,7 @@ let levels = [
   { minMana: 1001, maxMana: 2000, level: "Bronze" },
   { minMana: 2001, maxMana: 5000, level: "Silver" },
   { minMana: 5001, maxMana: 7000, level: "Gold" },
-  { minMana: 7001, maxMana: 8000, level: "Platinium" },
+  { minMana: 7001, maxMana: 8000, level: "Platinum" },
   { minMana: 8001, maxMana: 9000, level: "Arising" },
   { minMana: 9001, maxMana: 10000, level: "Immortal" },
   { minMana: 10001, maxMana: Infinity, level: "Radiant" }
