@@ -1,0 +1,58 @@
+//  PROJECT 01 - FIRST 
+function subtraction(victories, defeat) {
+    return victories - defeat;
+}
+
+function calculateLevel(balance) {
+    if (balance <= 10) {
+        return "Iron";
+    } else if (balance >= 11 && balance <= 20) {
+        return "Bronze";
+    } else if (balance >= 21 && balance <= 50) {
+        return "Silver";
+    } else if (balance >= 51 && balance <= 80) {
+        return "Gold";
+    } else if (balance >= 81 && balance <= 90) {
+        return "Diamond";
+    } else if (balance >= 91 && balance <= 100) {
+        return "Mythical";
+    } else if (balance >= 101) {
+        return "Immortal";
+    }
+}
+
+const hero = "Morgana";
+const victoryBalance = subtract(150, 20);
+const level = calculateLevel(victoryBalance);
+
+// PROJECT 2 - LAST ONE
+
+function computeRankingScore(victories, defeats) {
+    return victories - defeats;
+}
+
+function calculateLevel(balance) {
+    if (balance <= 10) {
+        return "Iron";
+    } else if (balance >= 11 && balance <= 20) {
+        return "Bronze";
+    } else if (balance >= 21 && balance <= 50) {
+        return "Silver";
+    } else if (balance >= 51 && balance <= 80) {
+        return "Gold";
+    } else if (balance >= 81 && balance <= 90) {
+        return "Diamond";
+    } else if (balance >= 91 && balance <= 100) {
+        return "Mythical";
+    } else if (balance >= 101) {
+        return "Immortal";
+    }
+}
+
+const hero = "Morgana";
+const rankingScore = computeRankingScore(150, 20);
+const level = calculateLevel(rankingScore);
+
+console.log(`${hero} has a ranking score of ${rankingScore} and is at ${level} level`);
+
+console.log(`${hero} has a balance of ${victoryBalance} and is on the level ${level}`);
