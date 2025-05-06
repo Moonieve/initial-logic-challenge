@@ -1,1 +1,44 @@
 new commit - 3
+class Hero {
+    constructor(name, age, type) {
+        this.name = name;
+        this.age = age;
+        this.type = type;
+    }
+
+    introduce() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Age: ${this.age}`);
+        console.log(`Type: ${this.type}`);
+    }
+    
+    attack() {
+        let attackType;
+
+        switch(this.type.toLowerCase()) {
+            case "wizard":
+                attackType = "used magic";
+                break;
+            case "warrior":
+                attackType = "used a sword";
+                break;
+            case "monk":
+                attackType = "used martial arts";
+                break;
+            case "ninja":
+                attackType = "used shuriken";
+                break;
+            default:
+                attackType = "used an undefined attack";
+        }
+
+        console.log(`The ${this.type} ${this.name} ${attackType}`);
+    }
+}
+
+// Creating a hero instance
+const character = new Hero("Alexander", 20, "warrior");
+
+// Using the methods
+character.introduce();
+character.attack();
